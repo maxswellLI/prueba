@@ -7,13 +7,12 @@ import contable.server.domain.Organismo;
 
 public class AdapterOrganismo {
 
+	public AdapterOrganismo();
 
 	public static OrganismoGwt get(Organismo organismoE){
 		return get(organismoE, new OrganismoGwt());
 	}
-	public static Organismo get(OrganismoGwt OrganismoE){
-		return get(OrganismoE, new Organismo());
-	}
+
 
 	public static OrganismoGwt get(Organismo organismoE, OrganismoGwt organismoS){
 
