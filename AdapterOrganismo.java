@@ -37,15 +37,4 @@ public class AdapterOrganismo {
 
 		return organismoS;
 	}
-
-	@SuppressWarnings("unchecked")
-	public static<T,Z> void getCollection(Collection<T> listE, Collection<Z> listS) {
-
-		for (T l : listE) {
-			if(l.getClass().equals(Organismo.class))
-				listS.add((Z) get((Organismo)l));
-			if(l.getClass().equals(OrganismoGwt.class))
-				listS.add((Z) get((OrganismoGwt)l));
-		}
-	}
 }
